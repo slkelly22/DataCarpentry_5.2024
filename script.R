@@ -6,7 +6,7 @@
 sessionInfo() 
 # You want at least R version 3.2
 
-# Episode: Before We Start
+# Episode 1: Before We Start
 
 # Create a Project within RStudio
 
@@ -38,3 +38,29 @@ installed.packages() # Easier to just look at packages tab
 # Loading / Activating / Using a Package
 library(tidyverse)
 library(here)
+
+# Episode 2: Introduction to R
+
+3+5
+12/7
+
+# Note: R is case sensitive
+# Assignment operator
+area_hectares <- 1
+# If you want it to print the output in the console
+(area_hectares <- 1)
+# or just type the object name
+area_hectares
+
+# Now that we have an object, we can do things with it
+2.47 * area_hectares
+
+# We can assign the area_hectares object a new value 
+area_hectares <- 2.5
+2.47 * area_hectares
+
+# You can even use that object to create a new object
+area_acres <- 2.47 * area_hectares
+# Then change area hectares to 50
+area_hectares <- 50
+# Exercise: What is the current content of area_acres -- 123.5 or 6.175
